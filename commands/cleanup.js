@@ -1,7 +1,7 @@
 //Cleanup Command
 module.exports.run = (client, prefix, message, args, con, dbl) => {
 
-	const symbols = new RegExp(/[-!$%^&()_+|~={}\[\]:;?,.\/]/)
+	const symbols = new RegExp(/[-!$%^&()_+|~={}\[\]:;?,.\/<>]/)
 	const clientMember = message.guild.member(client.user)
 
 	if (message.channel.type === 'dm') return message.author.send('This command can only be used inside of guilds.')
